@@ -6,4 +6,4 @@ ADD . /app2/
 RUN pip install -r requirements.txt
 
 EXPOSE 5005
-CMD ["python", "/app2/main.py"]
+CMD ["python", "/app2/main2.py"]
