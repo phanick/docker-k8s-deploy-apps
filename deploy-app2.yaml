@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: my-py-app2
-        image: phanick/my-py-app2:1
+        image: phanick/my-py-app2:2
         imagePullPolicy: Never
         ports:
         - containerPort: 5005
