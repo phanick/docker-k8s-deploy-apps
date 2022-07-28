@@ -1,9 +1,9 @@
 FROM python:3.7
 
-RUN mkdir /app
-WORKDIR /app
-ADD . /app/
+RUN mkdir /app1
+WORKDIR /app1
+ADD . /app1/
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
-CMD ["python", "/app/main.py"]
+CMD ["python", "/app1/main.py"]
