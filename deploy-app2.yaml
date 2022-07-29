@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-py-app2
+  name: my-app2-2907
 spec:
   selector:
-    app: my-py-app2
+    app: my-app2-2907
   ports:
   - name: http
     protocol: TCP
@@ -17,21 +17,21 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-py-app2
+  name: my-app2-2907
   
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: my-py-app2
+      app: my-app2-2907
   template:
     metadata:
       labels:
-        app: my-py-app2
+        app: my-app2-2907
     spec:
       containers:
-      - name: my-py-app2
-        image: phanick/my-py-app2:2
+      - name: my-app2-2907
+        image: phanick/my-app2-2907:2
         imagePullPolicy: Never
         ports:
         - containerPort: 5005
