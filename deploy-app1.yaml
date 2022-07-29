@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: my-app1-22
-        image: phanick/my-app1-22:1
+        image: phanick/my-app1-22:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
