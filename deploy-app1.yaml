@@ -20,7 +20,7 @@ metadata:
   name: my-app1-2907
   
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: my-app1-2907
@@ -30,7 +30,7 @@ spec:
         app: my-app1-2907
     spec:
       containers:
-      - name: my-py-app1
+      - name: my-app1-2907
         image: phanick/my-app1-2907:1
         imagePullPolicy: Never
         ports:
