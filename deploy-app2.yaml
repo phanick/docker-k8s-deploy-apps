@@ -30,7 +30,7 @@ spec:
         app: my-app2-31
     spec:
       containers:
-      - name: my-app2-2907
+      - name: my-app2-31
         image: phanick/my-app2-31:1
         imagePullPolicy: Never
         ports:
