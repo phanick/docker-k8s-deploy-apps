@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "python-new- app2"
+    return "python-app2-content added."
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
