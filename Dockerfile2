@@ -5,5 +5,5 @@ WORKDIR /app2
 ADD . /app2/
 RUN pip install -r requirements.txt
 
-EXPOSE 5010
+EXPOSE 5000
 CMD ["python", "/app2/main2.py"]
