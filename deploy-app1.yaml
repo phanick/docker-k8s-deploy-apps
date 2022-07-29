@@ -32,6 +32,6 @@ spec:
       containers:
       - name: my-app1-22
         image: phanick/my-app1-22:1
-        imagePullPolicy: Never
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
