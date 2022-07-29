@@ -33,5 +33,6 @@ spec:
       - name: my-app2-32
         image: phanick/my-app2-32:1
         imagePullPolicy: Always
+        restartPolicy: Always
         ports:
         - containerPort: 5000
