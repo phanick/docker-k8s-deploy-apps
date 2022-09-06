@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app2-092
+  name: my-app2-046
 spec:
   selector:
-    app: my-app2-092
+    app: my-app2-046
   ports:
   - name: http
     protocol: TCP
@@ -17,21 +17,21 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app2-092
+  name: my-app2-046
   
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app2-092
+      app: my-app2-046
   template:
     metadata:
       labels:
-        app: my-app2-092
+        app: my-app2-046
     spec:
       containers:
-      - name: my-app2-092
-        image: phanick/my-app2-092:2
+      - name: my-app2-046
+        image: phanick/my-app2-046:2
         imagePullPolicy: Always
         restartPolicy: Always
         ports:
