@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app1-055
+  name: ${APP_ONE}
 spec:
   selector:
-    app: my-app1-055
+    app: ${APP_ONE}
   ports:
   - name: http
     protocol: TCP
@@ -23,15 +23,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app1-055
+      app: ${APP_ONE}
   template:
     metadata:
       labels:
-        app: my-app1-055
+        app: ${APP_ONE}
     spec:
       containers:
-      - name: my-app1-055
-        image: phanick/my-app1-055:1
+      - name: ${APP_ONE}
+        image: phanick/${APP_ONE}:1
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
