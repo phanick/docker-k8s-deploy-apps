@@ -17,7 +17,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app1-055
+  name: ${APP_ONE}
   
 spec:
   replicas: 1
